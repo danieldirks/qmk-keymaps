@@ -7,18 +7,14 @@ IDENTIFIER_q1v2 = keychron/q1v2/ansi_encoder
 
 all: $(KEYBOARDS)
 
-.PHONY: all setup clean $(KEYBOARDS)
-
-setup:
-	./qmk_firmware/util/qmk_install.sh
+.PHONY: all setup $(KEYBOARDS) clean
 
 qmk_firmware:
 	git submodule update --init --recursive
 	git submodule update --remote
 
-clean:
-	rm -rf ./build/
-	rm -rf ./qmk_firmware/
+setup: qmk_firmware
+	./qmk_firmware/util/qmk_install.sh
 
 $(KEYBOARDS): qmk_firmware
 	rm -rf ./qmk_firmware/keyboards/$(IDENTIFIER_$@)/keymaps/$(USER)
@@ -29,3 +25,7 @@ $(KEYBOARDS): qmk_firmware
 	ln -s $(shell pwd)/user ./qmk_firmware/users/$(USER)
 
 	make BUILD_DIR=$(shell pwd)/build -j1 -C qmk_firmware $(IDENTIFIER_$@):$(USER)
+
+clean:
+	rm -rf ./build/
+	rm -rf ./qmk_firmware/
