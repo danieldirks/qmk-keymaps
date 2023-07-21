@@ -1,0 +1,6 @@
+# build
+/build
+obj_*
+*.hex
+*.elf
+*.map
