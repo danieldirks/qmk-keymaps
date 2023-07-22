@@ -6,6 +6,7 @@ Configuration for my QMK custom keyboards.
 ## Keyboards
 
 * [Keychron Q1 Version 2 ANSI](./q1v2/)
+* [Keychron Q0 Plus](./q0/)
 
 
 ## Usage
