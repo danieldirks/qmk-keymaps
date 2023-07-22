@@ -47,3 +47,11 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [FUNC] = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) },
 };
 #endif // ENCODER_MAP_ENABLE
+
+
+void keyboard_post_init_user(void) {
+    // rgb setup https://docs.qmk.fm/#/feature_rgb_matrix?id=functions
+    rgb_matrix_sethsv_noeeprom(0, 0, 0);
+    rgb_matrix_mode_noeeprom(RGB_MATRIX_SOLID_COLOR);
+    rgb_matrix_enable_noeeprom();
+}

@@ -1,2 +1,5 @@
+# base config
 ENCODER_MAP_ENABLE = yes
-RGB_MATRIX_ENABLE = no
+
+# rgb config
+RGB_MATRIX_ENABLE = yes
