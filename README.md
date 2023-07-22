@@ -27,4 +27,4 @@ make setup
 make
 ```
 
-Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash `<keyboard_name>_<keymap_name>.bin` onto the corresponding boards.
+Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash `build/<keyboard_name>_<keymap_name>.bin` onto the corresponding boards.

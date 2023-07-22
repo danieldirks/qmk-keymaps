@@ -9,6 +9,6 @@ My keymap for the [Keychron Q1 Version 2 ANSI](https://www.keychron.com/products
 
 ![](../assets/q1v2-layer2.jpg)
 
-### Windows Fn
+### Windows Function
 
 ![](../assets/q1v2-layer3.jpg)

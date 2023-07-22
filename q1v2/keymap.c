@@ -26,8 +26,8 @@ enum layers{
 };
 
 enum custom_keycodes {
-    CU_GRV  = SAFE_RANGE,    // overwrites dead grave
-    CU_QUOT = SAFE_RANGE+1,  // overwrites dead quote
+    CU_GRV  = SAFE_RANGE,  // overwrites dead grave
+    CU_QUOT,               // overwrites dead quote
 };
 
 #define KC_TASK LGUI(KC_TAB)
