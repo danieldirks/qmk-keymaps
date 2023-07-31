@@ -1,5 +1,6 @@
 #pragma once
 
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6  // 6 keymap layers
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 
 // rgb matrix config
