@@ -1,5 +1,7 @@
 #pragma once
 
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+
 // rgb matrix config
 // unset unneeded to save storage space
 #undef ENABLE_RGB_MATRIX_ALPHAS_MODS
