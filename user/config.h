@@ -1,7 +1,11 @@
 #pragma once
 
-// rgb matrix config
-// unset unneeded to save storage space
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+#define UNICODE_SELECTED_MODES UNICODE_MODE_WINCOMPOSE
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 2
+
+// unset unneeded rgb effects to save storage space
 #undef ENABLE_RGB_MATRIX_ALPHAS_MODS
 #undef ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #undef ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT

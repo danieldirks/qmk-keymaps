@@ -1,1 +1,6 @@
+CAPS_WORD_ENABLE = yes
+RGB_MATRIX_ENABLE = yes
+UNICODEMAP_ENABLE = yes
 VIA_ENABLE = yes
+
+SRC += danieldirks.c
