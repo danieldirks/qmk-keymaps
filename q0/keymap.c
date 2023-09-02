@@ -4,7 +4,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* _BASE default
      * +-----------------------------+
-     * | VOL |  -  |  -  |  -  | Esc |
+     * | ZOM |  -  |  -  |  -  | Esc |
      * |-----------------------------|
      * |  -  | NUM |  /  |  *  |  -  |
      * |-----------------------------|
@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +-----------------------------+
      */
     [_BASE] = LAYOUT_numpad_6x5(
-        KC_MUTE,  _______,  _______,  _______,  KC_ESC,
+        KC_ZRST,  _______,  _______,  _______,  KC_ESC,
         _______,  LT(_FN, KC_NUM), KC_PSLS,  KC_PAST,  KC_PMNS,
         _______,  KC_P7,    KC_P8,    KC_P9,    KC_PPLS,
         _______,  KC_P4,    KC_P5,    KC_P6,
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [_BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [_BASE] = { ENCODER_CCW_CW(KC_ZOUT, KC_ZOIN) },
     [_FN]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) },
 };
 #endif // ENCODER_MAP_ENABLE

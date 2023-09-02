@@ -26,3 +26,6 @@ enum unicode_names {
 #define KC_TASK LGUI(KC_TAB)
 #define KC_FLXP LGUI(KC_E)
 #define DD_CAPS LT(_FN, KC_CAPS)
+#define KC_ZOUT LCTL(KC_MINS)
+#define KC_ZOIN LCTL(KC_EQL)
+#define KC_ZRST LCTL(KC_0)
