@@ -2,7 +2,7 @@ USERNAME = danieldirks
 
 KEYBOARDS = q1v2 q0  # short names used for targets
 # full keyboard identifier as in `qmk list-keyboards`
-IDENTIFIER_q0 = keychron/q0/rev_0131
+IDENTIFIER_q0 = keychron/q0/plus
 IDENTIFIER_q1v2 = keychron/q1v2/ansi_encoder
 
 
