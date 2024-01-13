@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +---------------------------------------------------------------------------------------------+
      */
     [_FN] = LAYOUT_ansi_82(
-        QK_BOOT,  KC_BRID,  KC_BRIU,  KC_TASK,  KC_FLXP,  RGB_VAD,  RGB_VAI,     KC_MPRV,     KC_MPLY,     KC_MNXT,     KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,            RGB_TOG,
+        QK_BOOT,  KC_BRID,  KC_BRIU,  KC_TASK,  KC_FLXP,  RGB_VAD,  RGB_VAI,     KC_MPRV,     KC_MPLY,     KC_MNXT,     KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,            KC_ZRST,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLS,  _______,  _______,            KC_SLEP,
         RGB_MOD,  _______,  _______,  DE_EURO,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLU,  _______,  _______,            _______,
         _______,  _______,  _______,  _______,  _______,  _______,  LCTL(KC_H),  LCTL(KC_J),  LCTL(KC_K),  LCTL(KC_L),  DE_UMLO,  DE_UMLA,            _______,            _______,
@@ -53,6 +53,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
-    [_FN]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI)},
+    [_FN]   = { ENCODER_CCW_CW(KC_ZOUT, KC_ZOIN)},
 };
 #endif // ENCODER_MAP_ENABLE
