@@ -1,10 +1,5 @@
 #include QMK_KEYBOARD_H
 
-enum layers {
-    _BASE,
-    _FN,
-};
-
 enum unicode_names {
     UMLA,
     UMLAA,
