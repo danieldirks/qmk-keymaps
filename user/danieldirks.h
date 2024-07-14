@@ -18,11 +18,11 @@ enum unicode_names {
 };
 
 // custom keys
-#define DE_UMLA XP(UMLA, UMLAA)
-#define DE_UMLO XP(UMLO, UMLOO)
-#define DE_UMLU XP(UMLU, UMLUU)
-#define DE_UMLS XP(UMLS, UMLSS)
-#define DE_EURO X(EURO)
+#define DE_UMLA UP(UMLA, UMLAA)
+#define DE_UMLO UP(UMLO, UMLOO)
+#define DE_UMLU UP(UMLU, UMLUU)
+#define DE_UMLS UP(UMLS, UMLSS)
+#define DE_EURO UM(EURO)
 #define KC_TASK LGUI(KC_TAB)
 #define KC_FLXP LGUI(KC_E)
 #define DD_CAPS LT(_FN, KC_CAPS)
