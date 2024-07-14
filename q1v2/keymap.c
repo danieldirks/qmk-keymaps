@@ -1,5 +1,10 @@
 #include "danieldirks.h"
 
+enum layers {
+    _BASE,
+    _FN,
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* _BASE default
