@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [MAC_FN] = LAYOUT_ansi_82(
         QK_BOOT,  KC_BRID,  KC_BRIU,  KC_MCTL,  KC_LPAD,  RGB_VAD,  RGB_VAI,     KC_MPRV,     KC_MPLY,     KC_MNXT,     KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,            KC_ZRST,
-        _______,  _______,  _______,  _______,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLS,  _______,  _______,            KC_SLEP,
+        _______,  _______,  _______,  _______,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLS,  _______,  LCTL(KC_BSPC),      KC_SLEP,
         RGB_MOD,  _______,  _______,  DE_EURO,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLU,  _______,  _______,            _______,
         _______,  _______,  _______,  _______,  _______,  _______,  LCTL(KC_H),  LCTL(KC_J),  LCTL(KC_K),  LCTL(KC_L),  DE_UMLO,  DE_UMLA,            _______,            _______,
         KC_LSFT,            _______,  _______,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  _______,            KC_RSFT,  KC_PGUP,
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [WIN_FN] = LAYOUT_ansi_82(
         QK_BOOT,  KC_BRID,  KC_BRIU,  KC_TASK,  KC_FLXP,  RGB_VAD,  RGB_VAI,     KC_MPRV,     KC_MPLY,     KC_MNXT,     KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,            KC_ZRST,
-        _______,  _______,  _______,  _______,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLS,  _______,  _______,            KC_SLEP,
+        _______,  _______,  _______,  _______,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLS,  _______,  LCTL(KC_BSPC),      KC_SLEP,
         RGB_MOD,  _______,  _______,  DE_EURO,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  DE_UMLU,  _______,  _______,            _______,
         _______,  _______,  _______,  _______,  _______,  _______,  LCTL(KC_H),  LCTL(KC_J),  LCTL(KC_K),  LCTL(KC_L),  DE_UMLO,  DE_UMLA,            _______,            _______,
         KC_LSFT,            _______,  _______,  _______,  _______,  _______,     _______,     _______,     _______,     _______,  _______,            KC_RSFT,  KC_PGUP,
