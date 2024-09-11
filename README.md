@@ -2,10 +2,13 @@
 
 Configuration for my QMK custom keyboards.
 
+> [!NOTE]
+> This branch is based on [Keychron's bluetooth_playground](https://github.com/Keychron/qmk_firmware/tree/bluetooth_playground).
+> Refer to `main` for my native QMK keyboards.
+
 ## Keyboards
 
-* [Keychron Q1 Version 2 ANSI](./q1v2/)
-* [Keychron Q0 Plus](./q0/)
+* [Keychron K7 Pro ANSI](./k7_pro/)
 
 ## Usage
 
