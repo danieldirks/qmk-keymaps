@@ -1,7 +1,3 @@
 [submodule "qmk_firmware"]
 	path = qmk_firmware
 	url = https://github.com/danieldirks/qmk_firmware.git
-[submodule "qmk_firmware_bt"]
-	path = qmk_firmware_bt
-	url = https://github.com/keychron/qmk_firmware
-	branch = bluetooth_playground
