@@ -1,11 +1,10 @@
 USERNAME = danieldirks
 
 # short names used for targets
-KEYBOARDS = q1v2 q0  # master
+KEYBOARDS = k7_pro
 
 # full keyboard identifier as in `qmk list-keyboards`
-IDENTIFIER_q0 = keychron/q0/plus
-IDENTIFIER_q1v2 = keychron/q1v2/ansi_encoder
+IDENTIFIER_k7_pro = keychron/k7_pro/ansi/rgb
 
 
 .PHONY: help
