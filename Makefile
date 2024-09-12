@@ -7,11 +7,16 @@ KEYBOARDS = q1v2 q0  # master
 IDENTIFIER_q0 = keychron/q0/plus
 IDENTIFIER_q1v2 = keychron/q1v2/ansi_encoder
 
+# set to non-empty string to flash on build
+FLASH =
+
 
 .PHONY: help
 help:
 	@echo "Build and flash firmware for keyboards."
-	@echo "QMK: $(KEYBOARDS)"
+	@echo
+	@echo "Usage: make <keyboard> [FLASH=yes]"
+	@echo "  keyboards: $(KEYBOARDS)"
 
 .PHONY: clean
 clean:
@@ -36,6 +41,7 @@ $(KEYBOARDS): qmk_firmware
 	cp -r $(shell pwd)/user ./qmk_firmware/users/$(USERNAME)
 
 	make -C qmk_firmware BUILD_DIR=$(shell pwd)/build -j1 $(IDENTIFIER_$@):$(USERNAME)
-	make -C qmk_firmware BUILD_DIR=$(shell pwd)/build -j1 $(IDENTIFIER_$@):$(USERNAME):flash
-	
 
+	@if [ ! -z $(FLASH) ]; then \
+		make -C qmk_firmware BUILD_DIR=$(shell pwd)/build -j1 $(IDENTIFIER_$@):$(USERNAME):flash; \
+	fi
