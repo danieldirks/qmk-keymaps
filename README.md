@@ -26,7 +26,16 @@ make setup
 ### Build
 
 ```shell
-make
+make <keyboard>
 ```
 
-Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash `build/<keyboard_name>_<keymap_name>.bin` onto the corresponding boards.
+### Flash
+
+Set keyboard to bootloader mode and run build with `$FLASH` set to a non-empty string, e.g.
+
+```shell
+make <keyboard> FLASH=yes
+```
+
+On Windows, use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash
+`build/<keyboard_name>_<keymap_name>.bin` onto the corresponding board.
