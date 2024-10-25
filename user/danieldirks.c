@@ -12,9 +12,11 @@ const uint32_t unicode_map[] PROGMEM = {
     [EURO]  = 0x20AC,
 };
 
+#if defined(RGB_MATRIX_ENABLED) && defined(RGB_MATRIX_CUSTOM_USER)
 void keyboard_post_init_user(void) {
     rgb_matrix_mode(RGB_MATRIX_CUSTOM_BREATHING);
 }
+#endif
 
 bool process_detected_host_os_kb(os_variant_t detected_os) {
     if (!process_detected_host_os_user(detected_os)) {
