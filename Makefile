@@ -1,11 +1,12 @@
 USERNAME = danieldirks
 
 # short names used for targets
-KEYBOARDS = q1v2 q0  # master
+KEYBOARDS = q1v2 q0 ploopy-mouse
 
 # full keyboard identifier as in `qmk list-keyboards`
 IDENTIFIER_q0 = keychron/q0/plus
 IDENTIFIER_q1v2 = keychron/q1v2/ansi_encoder
+IDENTIFIER_ploopy-mouse = ploopyco/mouse
 
 # set to non-empty string to flash on build
 FLASH =

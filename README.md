@@ -2,10 +2,11 @@
 
 Configuration for my QMK custom keyboards.
 
-## Keyboards
+## Devices
 
 * [Keychron Q1 Version 2 ANSI](./q1v2/)
 * [Keychron Q0 Plus](./q0/)
+* [Ploopy Mouse](./ploopy-mouse/)
 
 ## Usage
 
