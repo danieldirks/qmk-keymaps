@@ -34,6 +34,7 @@ bool process_detected_host_os_kb(os_variant_t detected_os) {
             break;
         case OS_IOS:
         case OS_UNSURE:
+            set_unicode_input_mode(UNICODE_MODE_LINUX);
             break;
     }
     return true;
